@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}

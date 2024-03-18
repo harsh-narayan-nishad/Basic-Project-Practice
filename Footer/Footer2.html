@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Add your custom styles here */
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer-sections {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      margin-bottom: 20px;
+    }
+
+    .footer-buttons {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-button {
+      margin: 5px 0;
+      padding: 10px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .footer-projects {
+      text-align: left;
+    }
+
+    .footer-projects ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-projects li {
+      margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .footer-sections {
+        flex-direction: row;
+      }
+
+      .footer-section {
+        flex: 1;
+        margin-bottom: 0;
+      }
+
+      .footer-buttons {
+        flex-direction: row;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <footer class="footer">
+    <div class="footer-sections">
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>Email: your.email@example.com</p>
+        <p>Phone: +1 234 567 8901</p>
+      </div>
+      <div class="footer-section footer-projects">
+        <h3>College: GL Bajaj Institute of Technology and Management</h3>
+        <h3>Projects</h3>
+        <ul>
+          <li>Project 1: Smart Home Automation</li>
+          <li>Project 2: E-commerce Website</li>
+          <li>Project 3: Machine Learning in Finance</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

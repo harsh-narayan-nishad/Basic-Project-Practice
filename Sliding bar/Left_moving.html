@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Styles for the moving sliding bar container */
+    .slider-container {
+      position: relative;
+      height: 75px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* Styles for the sliding bar content */
+    .slider-content {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      animation: slide 30s linear infinite; /* Adjust the duration as needed */
+    }
+
+    @keyframes slide {
+      0% {
+        left: 100%; /* Start off-screen to the right */
+      }
+      100% {
+        left:-100%; /* Move to the left end */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <div class="slider-content">
+      <!-- Content for the sliding bar -->
+      <h2>Sliding Bar Content</h2>
+      <p>This is the content of the sliding bar.</p>
+    </div>
+  </div>
+</body>
+</html>

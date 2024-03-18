@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .container {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      
+    }
+
+    .green-div,
+    .black-div {
+      position: absolute;
+      /* top: 0;
+      left: 0; */
+      
+      width: 100%;
+      height: 100%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .green-div {
+        margin: 50%;
+      background-color: green;
+    }
+
+    .black-div {
+      background-color: black;
+      transform: translateX(100%);
+    }
+
+    .container:hover .green-div {
+      transform: translateX(-100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="green-div"></div>
+    <div class="black-div"></div>
+  </div>
+</body>
+</html>

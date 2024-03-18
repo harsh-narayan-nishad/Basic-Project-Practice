@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Circular Disk</title>
+  <style>
+    body{
+      background-color: red;
+    }
+    .disk {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: blue;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: rotateClockwise 10s linear infinite;
+    }
+
+    .image {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+
+    .text {
+      color: #000;
+      font-size: 20px;
+      position: absolute;
+      opacity: 0;
+    }
+
+    .text1 {
+      top: 45px;
+      left: 0;
+    }
+
+    .text2 {
+      top: 45px;
+      right: 0;
+    }
+
+    .text3 {
+      bottom: 55px;
+      right: 0;
+    }
+
+    .text4 {
+      bottom: 55px;
+      left: 0;
+    }
+
+    .text5 {
+      top: 100px;
+      left: 100px;
+    }
+
+    @keyframes rotateClockwise {
+      from {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      to {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="disk">
+
+    <img class="image" src="1.jpg" alt="Image 1" style="top: 0; left: 0; transform: translate(-50%, -50%) rotate(-45deg);">
+    <img class="image" src="2.jpg" alt="Image 2" style="top: 0; right: 0; transform: translate(-50%, -50%) rotate(45deg);">
+    <img class="image" src="3.jpg" alt="Image 3" style="bottom: 0; right: 0; transform: translate(-50%, -50%) rotate(0deg);">
+    <img class="image" src="4.jpg" alt="Image 4" style="bottom: 0; left: 0; transform: translate(-50%, -50%) rotate(-90deg);">
+    <img class="image" src="5.jpg" alt="Image 5" style="top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(90deg);">
+  
+    <p class="text text1" style="top: 45px; left: 0;">text1</p>
+    <p class="text text2" style="top: 45px; right: 0;">text2</p>
+    <p class="text text3" style="bottom: 55px; right: 0;">text3</p>
+    <p class="text text4" style="bottom: 55px; left: 0;">Text4</p>
+    <p class="text text5" style="top: 100px; left: 100px;">Text5</p>
+  
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.image');
+    const texts = document.querySelectorAll('.text');
+
+    // Add a mousemove event listener to the images
+    images.forEach(image => {
+      image.addEventListener('mousemove', () => {
+        // Make the corresponding text glow
+        texts[image.index].style.opacity = 1;
+      });
+    });
+
+    // Add a mouseleave event listener to the images
+    images.forEach(image => {
+      image.addEventListener('mouseleave', () => {
+        // Make the corresponding text fade away
+        texts[image.index].style.opacity = 0;
+      });
+    });
+  </script>
+</body>
+</html>

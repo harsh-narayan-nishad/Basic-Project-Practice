@@ -1,0 +1,14 @@
+.video-wrap{
+    width: 100%;
+    height: 70%;
+    z-index: +1;
+    background: yellow;
+
+}
+
+.custom-video{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    z-index: -1;
+}

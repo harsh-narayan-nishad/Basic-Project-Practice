@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #F3F4F6;
+    height: auto;
+}
+h1{
+   
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    letter-spacing: 4px;
+    padding: 200px 0 0px;
+    color: #555;
+    text-align: center;
+}
+p{
+   
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 7px;
+    padding: 3px 0 40px;
+    color: #555;
+    text-align: center;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    background: #F3F4F6;
+    height: 60px;
+    width: 60px;
+    margin: 0 15px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.1),
+                -6px -6px 10px -1px rgba(0,0,0,0.5);
+    border: 1px solid rgba(0,0,0,0);
+    transition: transform 0.31s;
+}
+a i{
+    font-size: 35px;
+    color: #777;
+    transition: transform 0.31s;
+}
+
+
+a:hover{
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7);
+    border: 1px solid rgba(0,0,0,0.01);
+    transform: translateY(2px);
+}
+
+a:hover i{
+    transform: scale(0.90);
+}
+
+a:hover .fa-facebook{
+    color: #3b5998;
+}
+a:hover .fa-instagram{
+    color: #f14843;
+}
+a:hover .fa-linkedin{
+    color: #0072b1 ;
+}
+a:hover .fa-discord{
+    color: #7289da;
+}
+a:hover .fa-youtube{
+    color: #f00;
+}

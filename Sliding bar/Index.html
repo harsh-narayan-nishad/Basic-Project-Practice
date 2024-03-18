@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Styles for the sliding bar */
+    #sliding-bar {
+      position: fixed;
+      top: 0;
+      left: -200px; /* Start off-screen */
+      width: 200px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      transition: left 0.3s; /* Add a smooth sliding animation */
+    }
+
+    #sliding-bar.show {
+      left: 0; /* Show the sliding bar */
+    }
+
+    /* Styles for the button to toggle the sliding bar */
+    #toggle-button {
+      position: fixed;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body>
+  <div id="toggle-button">Toggle Bar</div>
+  <div id="sliding-bar">
+    <!-- Content for the sliding bar -->
+    <h2>Sliding Bar Content</h2>
+    <p>This is the content of the sliding bar.</p>
+  </div>
+
+  <script>
+    // JavaScript to toggle the sliding bar
+    document.getElementById('toggle-button').addEventListener('click', function() {
+      document.getElementById('sliding-bar').classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

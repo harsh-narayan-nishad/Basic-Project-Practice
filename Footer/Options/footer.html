@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="footer.css">
+    <title>Footer with Sections</title>
+</head>
+<body>
+
+<footer>
+    <nav>
+        <section class="top-section">
+            <h2>Contact Us</h2>
+            <form action="sendmail.php" method="post">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+        <section class="bottom-section">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </section>
+    </nav>
+</footer>
+
+</body>
+</html>
