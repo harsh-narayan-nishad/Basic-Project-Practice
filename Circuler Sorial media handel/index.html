@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Rotating Disk</title>
+</head>
+<body>
+  <div class="container">
+    <!-- <div class="image-container fixed-center">
+      <img src="6.png" alt="Image 6">
+    </div> -->
+    <div class="disk">
+        
+      <div class="image-container">
+        <img src="1.jpg" alt="Image 1">
+        <div class="text">Text 1</div>
+      </div>
+      <div class="image-container">
+        <img src="2.jpg" alt="Image 2">
+        <div class="text">Text 2</div>
+      </div>
+      <div class="image-container">
+        <img src="3.jpg" alt="Image 3">
+        <div class="text">Text 3</div>
+      </div>
+      <div class="image-container">
+        <img src="4.jpg" alt="Image 4">
+        <div class="text">Text 4</div>
+      </div>
+      <div class="image-container fixed-center">
+        <img src="6.png" alt="Image 6">
+        <div class="text">Text 5</div>
+
+    </div>
+
+
+    </div>
+  </div>
+  <!-- <script src="script.js"></script> -->
+  
+<script>
+  const diskContainer = document.querySelector('.disk-container');
+  const images = document.querySelectorAll('.image');
+
+  const rotationDuration = 23 * 1000; // Convert seconds to milliseconds
+  const totalRotationAngle = 360; // Total rotation angle in degrees
+  const framesPerSecond = 60; // Number of frames per second for smooth animation
+
+  const rotationIncrement = (totalRotationAngle / rotationDuration) * framesPerSecond;
+
+  let rotationDegree = 0;
+
+  function rotateDisk() {
+    rotationDegree += rotationIncrement;
+    diskContainer.style.transform = `rotate(${rotationDegree}deg)`;
+
+    images.forEach((image, index) => {
+      image.style.transform = `rotate(-${rotationDegree}deg) translate(250px) rotate(${rotationDegree}deg)`;
+    });
+
+    requestAnimationFrame(rotateDisk);
+  }
+
+  rotateDisk(); // Start the rotation animation
+</script>
+</body>
+</html>
