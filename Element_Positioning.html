@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Positioning Practice</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            /* justify-content: center; */
+            margin: 0 15px 015px 15px;  /*down, , , right*/
+            align-items: center;
+        }
+
+        #positionedElement {
+            width: 200px;
+            height: 100px;
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="positionedElement">I'm a positioned element!</div>
+
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const positionedElement = document.getElementById('positionedElement');
+
+        //     // Example: Move the element to a specific position when the page loads
+        //     positionedElement.style.top = '50px';
+        //     positionedElement.style.left = '100px';
+
+        //     // Example: Move the element when it's clicked
+        //     positionedElement.addEventListener('click', function() {
+        //         const newPositionTop = Math.random() * (window.innerHeight - 100) + 'px';
+        //         const newPositionLeft = Math.random() * (window.innerWidth - 200) + 'px';
+
+        //         positionedElement.style.top = newPositionTop;
+        //         positionedElement.style.left = newPositionLeft;
+        //     });
+        // });
+    </script>
+</body>
+</html>

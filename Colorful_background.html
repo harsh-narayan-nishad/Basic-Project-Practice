@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes colorChange {
+      0% { border-color: #3498db; }
+      25% { border-color: #e74c3c; }
+      50% { border-color: #27ae60; }
+      75% { border-color: #f39c12; }
+      100% { border-color: #3498db; }
+    }
+
+    @keyframes backgroundMove {
+      0% { background-color: #3498db; }
+      25% { background-color: #e74c3c; }
+      50% { background-color: #27ae60; }
+      75% { background-color: #f39c12; }
+      100% { background-color: #3498db; }
+    }
+
+    .custom-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .custom-div {
+      border-radius: 30px;
+      height: 70vh;
+      width: 70%;
+      background-color: #fff;
+      border: 2px solid;
+      animation: colorChange 10s linear infinite; /* Adjust the animation duration as needed */
+      margin: auto;
+      margin-top: 15%;
+    }
+
+    .bottom-div {
+      margin: 20px;
+      height: 30vh;
+      width: 70vh;
+      background-color: #3498db; /* Set the initial background color */
+      animation: backgroundMove 10s linear infinite; /* Adjust the animation duration as needed */
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-container">
+    <div class="custom-div"></div>
+    <div class="bottom-div"></div>
+  </div>
+</body>
+</html>

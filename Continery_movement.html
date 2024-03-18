@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Upward Containers</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: flex-end;
+            height: 100vh;
+        }
+
+        .container {
+            width: 50vh;
+            height: calc(100vh - 30px);
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .inner-container {
+            width: calc(50vh - 20px);
+            height: 30vh;
+            margin: 10px; /* Adjust the margin as needed */
+            background-color: #3498db; /* Adjust the background color as needed */
+            position: absolute;
+            bottom: 0;
+            transition: transform 1s ease-in-out;
+        }
+
+        .container:hover .inner-container {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">Cotainer-1</div> <!--ctrl + D => to select multiple line to select multiple written same thing and edit (Used to selct class name of all container at same time)-->
+        <div class="inner-container">Cotainer-2</div> <!-- ctrl + Alt => to selct multiple line and make changes(Used to select containers and wirite some names in it)-->
+        <div class="inner-container">Cotainer-3</div>
+        <div class="inner-container">Cotainer-4</div>
+        <div class="inner-container">Cotainer-5</div>
+        <div class="inner-container">Cotainer-6</div>
+        <div class="inner-container">Cotainer-7</div>
+    </div>
+</body>
+</html>

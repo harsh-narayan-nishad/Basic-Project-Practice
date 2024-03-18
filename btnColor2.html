@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes colorChange {
+      0% { border-color: #3498db; }
+      25% { border-color: #e74c3c; }
+      50% { border-color: #27ae60; }
+      75% { border-color: #f39c12; }
+      100% { border-color: #3498db; }
+    }
+
+    .custom-div {
+      border-radius: 30px;
+      height: 70vh;
+      width: 70vh;
+      background-color: white;
+      border: 10px solid;
+      animation: colorChange 5s linear infinite; /* Change the animation duration as needed */
+      margin: auto;
+      margin-top: 15%;
+    }
+  </style>
+</head>
+<body>
+  <div class="custom-div"></div>
+</body>
+</html>

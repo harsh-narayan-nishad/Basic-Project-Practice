@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Rainbow Border</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .box {
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 5px solid transparent;
+            border-image: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red, violet) 1;
+            border-image-slice: 1;
+            animation: rotateBorder 10s linear infinite;
+        }
+
+        @keyframes rotateBorder {
+            0% {
+                background-size: 200% 200%;
+            }
+
+            100% {
+                background-size: 200% 200%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom right, #0100EC, #FB36F4);
+      background-size: 200% 200%;
+      animation: gradientAnimation 5s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    h1 {
+      font-size: 2em;
+      text-align: center;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 0%;
+      }
+      50% {
+        background-position: 100% 100%;
+      }
+      100% {
+        background-position: 0% 0%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Your Content Goes Here</h1>
+  </div>
+</body>
+</html>
